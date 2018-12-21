@@ -17,7 +17,7 @@ Visual studio code
 Support and contact details
 https://github.com/CarineIzere/QUIZ-BOARD-PROJECT for more info call at +250783706421 or text me at carizeree@gmail.com
 
-License
+## License
 MIT License
 
 Copyright (c) (2018) [Charles Gateru]
