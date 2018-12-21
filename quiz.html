@@ -1,91 +1,86 @@
  <!DOCTYPE html>
  <html>
         <head>
-              <title>Quiz</title>
-              <meta charset="utf-8" />
-              <meta http-equiv="X-UA-Compatible" content="IE=edge">
               <title>Quiz-Board</title>
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <link rel="stylesheet" type="text/css" href="css/styles.css">
-              <script src="main.js"></script>
               <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
               <script src="js/scripts.js"></script>
         </head>
        <body>
-             <div id="quiz">
-
-             <h1>Welcome in JavaScript Quiz You May START A Quiz Wish you Good Luck! <a></h1> 
+              <h1>Welcome in JavaScript Quiz You May START A Quiz Wish you Good Luck! <a></h1> 
              <p>
-         <form name="quiz" class="container">
+         <form name="quiz" id="results">
              <p>
                  <b>Question1<br>Can you access Cookie using javascript?<br></b>
-                 <input type="radio" name="q1" value="a"id="q1a"><label for="q1a">Yes<br>
-                 <input type="radio" name="q1" value="b"id="q1b"><label for="q1b">No<br>
+                 <label></label><input type="radio" name="q1" value=true class="correct" required>Yes</label><br>
+                 <label><input type="radio" name="q1" value=false required>No</label><br>
              <p> 
                 <b>Question2<br>Which of the following is the correct syntax to redirect a url using JavaScript?<br></b>
-                 <input type="radio" name="q2" value="a"id="q2a"><label for="q2a">document.location='http://www.newlocation.com;<br>
-                 <input type="radio" name="q2" value="b"id="q2b"><label for="q2b">browser.location='http://www.newlocation.com;<br>
-                 <input type="radio" name="q2" value="c"id="q2c"><label for="q2c">navigator.location='http://www.newlocation.com;<br>
-                 <input type="radio" name="q2" value="d"id="q2d"><label for="q2d">window.location='http://www.newlocation.com.<br>
+                <label><input type="radio" name="q2" value=false required>document.location='http://www.newlocation.com;</label><br>
+                <label><input type="radio" name="q2" value=false required>browser.location='http://www.newlocation.com;</label><br>
+                <label><input type="radio" name="q2" value=false required>browser.location='http://www.newlocation.com;</label><br>
+                 <label><input type="radio" name="q2" value=true class="correct" required>navigator.location='http://www.newlocation.com;</label><br>
              <p>
                 <b>Question3<br>Which built-in method removes the last element from an array and returns that element?<br></b>
-                <input type="radio" name="q3" value="a"id="q3a"><label for="q3a">last();<br>
-                <input type="radio" name="q3" value="b"id="q3b"><label for="q3b">get();<br>
-                <input type="radio" name="q3" value="c"id="q3c"><label for="q3c">pop();<br>
-                <input type="radio" name="q3" value="d"id="q3d"><label for="q3d">None of the above.<br>
+                <label><input type="radio" name="q3" value=false required>last();</label><br>
+                <label><input type="radio" name="q3" value=false required>get();</label><br>
+                <label><input type="radio" name="q3" value=true class="correct" required>pop();</label><br>
+                  <label><input type="radio" name="q3" value=false required>None of the above.</label><br>
              <p>
                 <b>Question4<br>Which built-in method returns the characters in a string beginning at the specified location?<br></b>
-                <input type="radio" name="q4" value="a"id="q4a"><label for="q4a">substr();<br>
-                <input type="radio" name="q4" value="b"id="q4b"><label for="q4b">getSubstring();<br>
-                <input type="radio" name="q4" value="c"id="q4c"><label for="q4c">slice();<br>
-                <input type="radio" name="q4" value="d"id="q4d"><label for="q4d">None of the above.<br>
+                <label><input type="radio" name="q4" value=true class="correct" required>substr();</label><br>
+                  <label><input type="radio" name="q4" value=false required>getSubstring();</label><br>
+                  <label><input type="radio" name="q4" value=false required>slice();</label><br>
+                  <label><input type="radio" name="q4" value=false required>None of the above.</label><br>
              <p>
                 <b>Question5<br>Which of the following function of Boolean object returns the primitive value of the Boolean object?<br></b>
-                <input type="radio" name="q5" value="a"id="q5a"><label for="q5a">toSource();<br>
-                <input type="radio" name="q5" value="b"id="q5b"><label for="q5b">valueOf();<br>
-                <input type="radio" name="q5" value="c"id="q5c"><label for="q5c">toString();<br>
-                <input type="radio" name="q5" value="d"id="q5d"><label for="q5d">None of the above.<br>
+                <label><input type="radio" name="q5" value=false required>toSource();</label><br>
+                  <label><input type="radio" name="q5" value=true class="correct" required>valueOf();</label><br>
+                     <label><input type="radio" name="q5" value=false required>toString();</label><br>
+                     <label><input type="radio" name="q5" value=false required>None of the above.</label><br>
              <p>
                 <b>Question6<br>Which of the following function of String object executes the search for a match between a regular expression and a specified string?<br></b>
-                <input type="radio" name="q6" value="a"id="q6a"><label for="q6a">concat();<br>
-                <input type="radio" name="q6" value="b"id="q6b"><label for="q6b">match();<br>
-                <input type="radio" name="q6" value="c"id="q6c"><label for="q6c">replace();<br>
-                <input type="radio" name="q6" value="d"id="q6d"><label for="q6d">search().<br>
+                <label><input type="radio" name="q6" value=false required>concat();</label><br>
+                <label><input type="radio" name="q6" value=false required>match();<label><br>
+                <label><input type="radio" name="q6" value=false required>replace();label><br>
+                <label><input type="radio" name="q6" value=true class="correct" required>search().</label><br><br>
              <p>
                <b>Question7<br>Which of the following function of String object creates a string to be displayed in a big font as if it were in a <em>big</em> tag?<br></b>
-               <input type="radio" name="q7" value="a"id="q7a"><label for="q7a">anchor();<br>
-               <input type="radio" name="q7" value="b"id="q7b"><label for="q7b">big();<br>
-               <input type="radio" name="q7" value="c"id="q7c"><label for="q7c">blink();<br>
-               <input type="radio" name="q7" value="d"id="q7d"><label for="q7d">italics().<br>
+               <label><input type="radio" name="q7" value=false required>anchor();</label><br>
+               <label><input type="radio" name="q7" value=true class="correct" required>big();</label><br>
+                  <label><input type="radio" name="q7" value=false required>blink();</label><br>
+                  <label><input type="radio" name="q7" value=false required>italics().</label><br>
              <p>
                 <b>Question8<br>Which of the following function of String object causes a string to be displayed as struck-out text, as if it were in a <em>strike</em> tag?<br></b>
-                <input type="radio" name="q8" value="a"id="q8a"><label for="q8a">sup();<br>
-                <input type="radio" name="q8" value="b"id="q8b"><label for="q8b">small();<br>
-                <input type="radio" name="q8" value="c"id="q8c"><label for="q8c">strike();<br>
-                <input type="radio" name="q8" value="d"id="q8d"><label for="q8d">sub().<br>
+                <label><input type="radio" name="q7" value=false required>sup();</label><br>
+                <label><input type="radio" name="q7" value=false required>small();</label><br>
+                <label><input type="radio" name="q7" value=true class="correct" required>big();</label><br>
+                  <label><input type="radio" name="q7" value=false required>anchor();</label>().<br>
              <p>
                 <b>Question9
                 <br> Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?<br></b>
-                <input type="radio" name="q9" value="a"id="q9a"><label for="q9a">push();<br>
-                <input type="radio" name="q9" value="b"id="q9b"><label for="q9b">join();<br>
-                <input type="radio" name="q9" value="c"id="q9c"><label for="q9c">pop();<br>
-                <input type="radio" name="q9" value="d"id="q9d"><label for="q9d">map().<br>
+                <label><input type="radio" name="q8" value=false required>push();</label><br>
+                <label><input type="radio" name="q8" value=false required>join();<label><br>
+                <label><input type="radio" name="q8" value=false required>pop();</label><br>
+                <label><input type="radio" name="q8" value=true class="correct" required>map().</label><br>
              <p>
                 <b>Question10<br>Which of the following function of Array object sorts the elements of an array?<br></b>
-                <input type="radio" name="q10" value="a"id="q10a"><label for="q10a">toSource();<br>
-                <input type="radio" name="q10" value="b"id="q10b"><label for="q10b">sort();<br>
-                <input type="radio" name="q10" value="c"id="q10c"><label for="q10c">toString();<br>
-                <input type="radio" name="q10" value="d"id="q10d"><label for="q10d">unshift().<br>
+                <label><input type="radio" name="q10" value=false required>toSource();</label><br>
+                  <label><input type="radio" name="q10" value=true class="correct" required>sort();</label><br>
+                        <label><input type="radio" name="q10" value=false required>toString();</label><br>
+                        <label><input type="radio" name="q10" value=false required>unshift().;</label><br>
              </div>
-             <button id="submit">Get Results</button>
+                
          </form>
               <p>
              <div id="results">
-         <form method="post" name="Form" onsubmit="results" input type=text name="percentage">
-               <input type=text name="percentage">
-               <input type="submit" value="Submit results"><br>
+                  <button class="submit">Get Results</button> 
+               <input type=text name="results">
+               <input type="submit" value="submit"><br>
+                <script src="js/scripts.js"></script>
               </div>
-      </form>
+      
      </body>
  <html>
 
