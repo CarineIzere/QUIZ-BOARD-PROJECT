@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>QUIZ-BOARD</title>
+
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+    <h1>PROJECT : QUIZ-BOARD</h1>
+    <p>My high school has started an after-school computer club and they need my help! The club is finishing a course on JavaScript and they need a quiz for students to take at the end. They have asked me to create a page that contains questions about JavaScript. <em>Here there are some questions about JavaScript please do all question in order to get sufficient marks and pass </em></p> 
+    </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>Quiz of JavaScript</h3>
+        <ul>
+          <li>Instructions</li>
+          <li>Personal information</li>
+          <li>Attendance</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h3>Instructions</h3>
+        <p>This quiz consists of 10 multiple-choice questions. To be successful with the weekly quizzes, it’s important to thoroughly read chapter 5 in the textbook.  It will also be extremely useful to study the key terms at the end of the chapter and review the Test Your Knowledge activity at the end of the chapter. Keep the following in mind:</p>
+        <ul>
+          <li><strong></strong>Multiple Attempts</strong> - You will have three attempts for this quiz with your highest score being recorded in the grade book.</li>
+          <li><strong></strong>Timing</strong> - You will need to complete each of your attempts in one sitting, as you are allotted 30 minutes to complete each attempt.</li>
+          <li><strong>Answers</strong> - You may review your answer-choices and compare them to the correct answers after your final attempt.</li>
+          <li>To take a Quiz please click at Take a quiz after filling personal information</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+          <form action="quiz.html" style="border:1px solid #ccc">
+              <div class="container">   </form> 
+                <h3>Personal information</h3> 
+                <h4>Access on QUIZ</h4>
+                <p><em>Please fill in this form to take a QUIZ</em></p>
+                <table>
+                    <tr>
+                      <td>Gender:</td>
+                        <td>
+                         <input type="radio" name="Male"> Male
+                         <input type="radio" name=" Female">Female
+                        </td>
+                       </tr>
+                       </table>
+                <hr>
+                <label for="FullName"><b>FullName</b></label>
+                <input type="text" placeholder="Enter FullName" name="FullName" required>
+
+                <label for="address"><b>Address</b></label>
+                <input type="text" placeholder="Enter Address" name="address" required>
+                <label for="PhoneNumber"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter PhoneNumber" name="PhoneNumber" required>
+                <label for="SchoolName"><b>School Name</b></label>
+                <input type="text" placeholder="Enter SchoolName" name="SchoolName" required> 
+                <label for="level"><b>Level</b></label>
+                <input type="text" placeholder="Enter level" name="Level" required>           
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <p>By giving us you personal Identity and taking this QUIZ you must read carefully our  <a href="instruction.html">INSRTUCTIONS</a>.</p>
+            
+                <div class="clearfix">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Take a Quiz</button><a href="quiz.html"></a></button>
+                </div>
+              </div>
+      </div>
+      <div class="col-sm-3">
+          <h3>Attendance</h3>
+          <p>This is for Supervisor only <a href="login.html">ATTENDANCE LIST</a></p>
+        
+        </div> 
+        
+    </div>
+  </div>
+  </div>
+
+  </body>
+  </html>
